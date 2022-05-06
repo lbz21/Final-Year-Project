@@ -250,7 +250,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -271,7 +271,7 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
+	border-spacing: 3;
 }
 
          
@@ -286,10 +286,14 @@ table {
 </head>
 <body>
     
-<a href="/views/tracker.ejs">link text</a>
+<a href="/todolist.ejs">To-do List</a>
+<a href="/notes.html">Notes Manager</a>
+<a href="/landing.ejs">Log Out</a>
+
+
 
     <div class="app">
-        <!-- Sidebar -->
+        <!-- This is the Sidebar/Main content -->
         <aside class="sidebar">
             <header class="header">
                 <h1 class="header-title">My Categories</h1>
@@ -320,7 +324,7 @@ table {
             <!-- Header -->
             <header class="header">
                 <div>
-                    <h1 class="header-title">Welcome Back, <strong>Developer Studio</strong></h1>
+                    <h1 class="header-title">Welcome Back, <strong>This is the dashboard</strong></h1>
                     <div class="currently-viewing" data-currently-viewing>You are currently viewing All Categories</div>
                 </div>
 
@@ -335,7 +339,7 @@ table {
                         <input type="text" data-new-todo-input placeholder="Enter Todo" required>
                     </div>
                     <button class="btn btn-primary">
-                        <i class="fa fa-plus" aria-hidden="true"></i> Add Todo
+                        <i class="fa fa-plus" aria-hidden="true"></i> New
                     </button>
                 </form>
 
@@ -366,7 +370,7 @@ table {
                         <i class="far fa-trash-alt"></i>
                     </div>
                 </div>
-                            <!-- More cards -->
+                            <!--  cards -->
 
                 <div class="todo" style="border-color: black;">
                     <div class="todo-tag" style="background-color: rgba(0, 0, 0, 0.5); color: black;">

@@ -105,8 +105,8 @@ app.get("/dashboard", isAuth, (req, res) => {
     res.render("dashboard");
 });
 
-app.get("/tracker", function(req, res) {
-    res.render("tracker");
+app.get("/todolist", isAuth, (req, res) => {
+    res.render("todolist");
 });
 
 

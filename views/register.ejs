@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | Node Auth</title>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen" href="https://s3.amazonaws.com/com.lift.rails.assets/assets/application-7c464f9d70cbb636eb324f7b91c02271.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1025566762"></script>
+</head>
+<body>
+    <div class="container-narrow">
+        <div class="lift-card responsive-container login-form">
+    <form class="new_user" action="/register" method="POST">
+        <div class="input-group">
+            <label for = "username">Username:</label>
+            <input required="required" type="text" name="username">
+        </div>
+        <div class="input-group">
+            <label for = "email">Email:</label>
+            <input required="required" type="email" name="email">
+</div>
+<div class="input-group">
+    <label for = "password">Password:</label>
+    <input required="required" type="password" name="password" />
+</div>
+<div class="form-group">
+    &nbsp;
+<button class="btn btn-primary btn-lg btn-alt pull-right">Register</button><br>
+</div>
+<a href="/login">Login</a>
+
+
+    </form>
+</div>
+
+
+
+
+
+
+
+    
+</body>
+</html>
